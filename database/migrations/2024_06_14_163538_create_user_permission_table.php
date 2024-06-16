@@ -14,7 +14,7 @@ class CreateUserPermissionTable extends Migration
     public function up()
     {
         Schema::create('user_permission', function (Blueprint $table) {
-            $table->foreignId("user_id");
+            $table->foreignId("user_id")->constrained();;
             $table->foreignId("permission_id")->constrained('permissions'); // Update the referenced table name
             $table->timestamps();
         });

@@ -21,7 +21,7 @@ class CreateTarificationsTable extends Migration
             $table->foreignId('duree_location_id')
                 ->constrained(); // Descriptive constraint name
 
-            $table->foreignId('article_id');
+            $table->foreignId('article_id')->constrained();;
             $table->timestamps();
         });
 
