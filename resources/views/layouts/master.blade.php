@@ -23,9 +23,10 @@
 
         <x-topnav />
 
-
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <x-menu />
 
+        </aside>
         <div class="content-wrapper">
 
 

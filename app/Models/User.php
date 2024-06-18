@@ -71,6 +71,7 @@ class User extends Authenticatable
     public function getAllRoleNamesAttribute(){
         return $this->roles->implode("nom", ' | ');
     }
+  
 
 
 }
