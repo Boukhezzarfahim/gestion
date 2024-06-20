@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Str;
 
+
+
+
+define("PAGELIST", "liste");
+define("PAGECREATEFORM", "create");
+define("PAGEEDITFORM", "edit");
+
+
 function userFullName(){
 
     return auth()->user()->prenom . " " . auth()->user()->nom;

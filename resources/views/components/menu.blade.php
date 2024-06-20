@@ -113,7 +113,7 @@
           @can("employe")
           <li class="nav-header">LOCATION</li>
           <li class="nav-item">
-              <a href="{{ route('employe.clients.index') }}" class="nav-link ">
+              <a href="" class="nav-link ">
                   <i class="nav-icon fas fa-users"></i>
                   <p>
                   Gestion des clients
