@@ -62,33 +62,4 @@
 
         </div>
     </div>
-    <script>
-        window.addEventListener('showConfirmMessage', event => {
-            Swal.fire({
-                title: "Etes-vous sûr de continuer?",
-                text: event.detail.message,
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: "Oui, Je supprime!",
-                cancelButtonText: "Annuler"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Livewire.emit('deleteUser', event.detail.data.user_id);
-                }
-            });
-        });
-    
-        window.addEventListener('showSuccessMessage', event => {
-            Swal.fire({
-                position: "top-end",
-                icon: "success",
-                toast: true,
-                title: event.detail.message || "Opération effectuée avec succès",
-                showConfirmButton: false,
-                timer: 3000
-            });
-        });
-    </script>
     

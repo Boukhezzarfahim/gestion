@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 define("PAGELIST", "liste");
 define("PAGECREATEFORM", "create");
 define("PAGEEDITFORM", "edit");
+define("DEFAULTPASSWORD", "password");
 
 
 function userFullName(){

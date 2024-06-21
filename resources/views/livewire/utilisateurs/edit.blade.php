@@ -112,35 +112,23 @@
   </div>
  
 
-    <div class="col-md-6">
-        <div class="row ">
-            <div class="col-md-12">
-                <div class="card card-primary">
-                    <div class="card-header">
-                    <h3 class="card-title"><i class="fas fa-key fa-2x"></i> Réinitialisation de mot de passe</h3>
-                    </div>
-                    <!-- /.card-header -->
-                    <div class="card-body">
-                        <ul>
-                            <li>
-                                <a href="#" class="btn btn-link" wire:click.prevent="confirmPwdReset()">Réinitialiser le mot de passe</a>
-                                <span>(par défaut: "password") </span>
-                            </li>
-                        </ul>
-                    </div>
+  <div class="col-md-6">
+    <div class="row ">
+        <div class="col-md-12">
+            <div class="card card-primary">
+                <div class="card-header">
+                <h3 class="card-title"><i class="fas fa-key fa-2x"></i> Réinitialisation de mot de passe</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            <a href="#" class="btn btn-link" wire:click.prevent="confirmPwdReset()">Réinitialiser le mot de passe</a>
+                            <span>(par défaut: "password") </span>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
 
-<script>
-  window.addEventListener('showSuccessMessage' , event=>{
-    Swal.fire({
-  position: "top-end",
-  icon: "success",
-  toast: true ,
-  title: event.detail.message || "opération effectuée avec succèss",
-  showConfirmButton: false,
-  timer: 3000
-})
-  })
-</script>
